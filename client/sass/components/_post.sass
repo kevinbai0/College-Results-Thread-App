@@ -1,0 +1,159 @@
+
+$headerFontSize: 1.5vw
+$subheaderFontSize: 1.25vw
+
+.applicant-post
+    border: 1px solid #979797
+    border-radius: 1vw
+    display: flex
+    overflow: hidden
+    margin: 0.5vw 0
+
+
+.stats-section
+    width: 60%
+    display: grid
+    grid-template-rows: 1fr 4fr
+    grid-template-columns: 2fr 3fr
+    padding: 2vw
+    overflow: scroll
+    .applicant-info-header
+        grid-column: 1/3
+        display: flex
+        flex-direction: column
+        .school-div
+            font-size: 1.25vw
+    .column-1
+        margin: 0 2vw 0 0
+
+.general-section
+    width: 40%
+    background-color: #333333
+    padding: 2vw
+    display: grid
+    grid-template-rows: 1fr 4fr
+    grid-template-columns: 1fr
+    .button-link
+        color: white
+        text-decoration: none
+        transition: all 0.5s ease
+        text-align: right
+
+    .button-link:hover
+        opacity: 0.5
+    
+
+.decision-header
+    font-weight: 700
+    font-size: $headerFontSize
+    grid-row: 1/2
+    grid-column: 1/3
+
+
+.decision-accepted
+    color: #34C800
+
+.decision-rejected
+    color: #E63D3D
+
+.decision-deferred
+    color: #E2AD12
+
+.decision-unknown
+    color: black
+
+.body-header
+    font-weight: 700
+    font-size: $subheaderFontSize
+
+.body-content
+    font-weight: 300
+    font-size: $subheaderFontSize
+
+.body-emphasis
+    font-weight: 600
+
+.white-text
+    color: white
+
+.sat-raw-section
+    display: grid
+    grid-template-columns: 1fr 1fr auto
+    grid-template-rows: 1fr
+
+.act-raw-section
+    display: grid
+    grid-template-columns: 1fr 1fr auto
+    grid-template-rows: 1fr
+    .body-content
+        text-align: right
+    .body-header
+        text-align: left
+
+.act-normalized-section
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr
+    align-items: center
+    .body-header
+        grid-row: 1/2
+    .body-content:nth-child(2n)
+        text-align: right
+    
+.sat-normalized-section
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 1fr 1fr 1fr 1fr
+    margin: 0 0 1vw 0
+    .body-header
+        grid-row: 1/2
+    .body-content:nth-child(2n)
+        text-align: right
+
+.post-profile-section 
+    display: grid
+    grid-template-columns: 2fr 2fr 1fr
+    align-items: center
+    .body-content
+        text-align: right
+    margin-bottom: 1vw
+
+.gpa-section 
+    display: grid
+    grid-template-columns: 2fr 1fr auto
+    .body-content
+        text-align: right
+    margin: 0 0 1vw 0
+
+.rank-section
+    display: grid
+    grid-template-rows: 1fr
+    grid-template-columns: 1fr 1fr auto
+    .body-content 
+        text-align: right
+        
+.normalized-icon-true 
+    border-radius: 0.7vw
+    background-color: rgb(80,220,200)
+    width: 1vw
+    height: 1vw
+    align-self: center
+    justify-self: end
+    margin: 0 0 0 5px
+
+.normalized-icon-false 
+    border-radius: 0.7vw
+    background-color: rgb(240,220,80)
+    width: 1vw
+    height: 1vw
+    align-self: center
+    justify-self: end
+    margin: 0 0 0 5px
+
+.follow-mouse-content
+    position: absolute
+    background-color: white
+    color: #333333
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5)
+    max-width: 20vw
+    padding: 1vw
